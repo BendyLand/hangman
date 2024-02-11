@@ -1,4 +1,5 @@
 ﻿open Hangman
+open GameBoard
 open System
 open System.IO
 
@@ -8,18 +9,13 @@ let greetUser =
     Let's start by choosing a letter: \n\
     "
 
-let chooseRandomWord = 
-    let rnd = Random()
-    let words = "../words.txt" |> File.ReadAllLines
-    let randomWord = words |> Array.item (rnd.Next(words.Length))
-    randomWord
-
 let start = 
     // I eventually want chooseRandomWord here
     greetUser
 
+
 [<EntryPoint>]
 let main argv = 
-    let randomWord = chooseRandomWord
+    let (startingBoard, randomWord) = GameBoard.create
     start
     0
