@@ -1,6 +1,0 @@
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(run, Some(961ac45a-4532-4745-83a8-706cf0e867c7), Some(CommandSource(console0)))[0m
-[0m[[0m[0mdebug[0m] [0m[0mEvaluating tasks: Compile / run[0m
-[0m[[0m[0mdebug[0m] [0m[0mRunning task... Cancel: Signal, check cycles: false, forcegc: true[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 1 Scala source to /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman/target/scala-3.3.1/classes ...[0m
-[0m[[0m[32msuccess[0m] [0m[0mTotal time: 2 s, completed Feb 10, 2024, 5:47:48 PM[0m
-[0m[[0m[0mdebug[0m] [0m[0m> Exec(shell, None, None)[0m
