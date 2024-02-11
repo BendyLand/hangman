@@ -10,22 +10,24 @@ let greetUser =
     "
 
 let start = 
-    // I eventually want chooseRandomWord here
     greetUser
+    GameBoard.create
 
 
 [<EntryPoint>]
 let main argv = 
-    start
-    let (startingBoard, randomWord) = GameBoard.create
-    printfn $"%s{startingBoard}"
-    let gameStats = 
+    let (board, word) = start
+    printfn $"%s{board}"
+    let initialGameStats = 
         {
             guessedChars = []
             gameOver = false
             numWrong = 0
         }
-    let (newBoard, guessedChars) = update gameStats randomWord 'e' 
+    let guess = 
+        try Console.ReadLine()[0] |> Char.ToLower
+        with | :? IndexOutOfRangeException -> 'a'
+    let (newBoard, guessedChars) = update initialGameStats word guess
     printfn $"%s{newBoard}"
-    printfn $"The random word was: %s{randomWord}"
+    printfn $"The random word was: %s{word}"
     0

@@ -34,10 +34,8 @@ let display board =
 
 let chooseLetter = 
     let choice = Console.ReadLine()
-    try
-        choice[0] |> Char.ToLower
-    with
-        | :? System.IndexOutOfRangeException -> 
+    try choice[0] |> Char.ToLower
+    with | :? IndexOutOfRangeException -> 
             printfn "Invalid input. Defaulting to 'a'"
             'a'
 
@@ -53,7 +51,7 @@ let chooseGameImage numWrong =
     | _ -> Hangman.deadMan
 
 let update gameStats randomWord guess =
-    if List.contains guess gameStats.guessedChars && not gameStats.gameOver then
+    if  List.contains guess gameStats.guessedChars && not gameStats.gameOver then
         printfn "Already guessed that letter!"
         (randomWord, gameStats.guessedChars)
     else
