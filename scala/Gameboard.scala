@@ -5,23 +5,23 @@ import scala.io.Source.*
 import hangman.*
 
 object GameBoard:
-    val randomWord = GameBoard.getRandomWord()
+    val randomWord = GameBoard.getRandomWord
     var gameOver = false
     var numWrong = 0
     var gameBoard = ""
     var guessedChars: List[Char] = List()
 
-    def checkWin(): Boolean = 
+    def checkWin: Boolean = 
         val correctGuesses = guessedChars.filter(c => randomWord.contains(c)).size 
         correctGuesses == randomWord.distinct.size
 
-    def checkNumWrong(): Int =
+    def checkNumWrong: Int =
         val correctGuesses = guessedChars.filter(c => randomWord.contains(c))
         val result = guessedChars.size - correctGuesses.size  
         numWrong = result
         result
 
-    def getRandomWord(): String =
+    def getRandomWord: String =
         val words = fromFile("../words.txt").getLines().toArray
         val num = (math.random() * words.size + 1).toInt
         words(num)
@@ -37,7 +37,7 @@ object GameBoard:
             println("Already guessed that letter!")
         else
             guessedChars = guess +: guessedChars
-            val gameImage = chooseGameImage(checkNumWrong())
+            val gameImage = chooseGameImage(checkNumWrong)
             val resultWord = 
                 for i <- 0 until GameBoard.randomWord.size 
                     yield 

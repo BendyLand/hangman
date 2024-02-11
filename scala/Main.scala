@@ -3,7 +3,7 @@ import gameboard.*
 
 @main def run() =
     welcomePlayer(GameBoard.randomWord)
-    while GameBoard.numWrong < 7 && !GameBoard.checkWin() do
+    while GameBoard.numWrong < 7 && !GameBoard.checkWin do
         startGame()
 
 
@@ -16,7 +16,7 @@ def startGame(): Unit =
     def play(): Unit = 
         val choice = GameBoard.chooseLetter()
         GameBoard.update(choice)
-        if GameBoard.checkWin() then
+        if GameBoard.checkWin then
             println(s"You win! The word was ${GameBoard.randomWord}")
         else
             GameBoard.display
