@@ -1,7 +1,7 @@
 package hangman
 
 import gameboard.GameBoard.randomWord 
-
+ 
 object HangMan:
     val empty = 
         """
