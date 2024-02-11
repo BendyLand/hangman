@@ -4573,3 +4573,1412 @@ java.util.concurrent.TimeoutException
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.lang.Thread.run(Thread.java:1623)
 [0m
+2024.02.10 19:34:17 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:34:17 WARN  No build session currently active to reload.[0m
+2024.02.10 19:34:50 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:34:50 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 7:37:24 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1254 out of 1254
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1254 out of 1254
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1254 out of 1254
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 7:37:25 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1279 out of 1279
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1279 out of 1279
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1279 out of 1279
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 7:37:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1254 out of 1254
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1254 out of 1254
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1254 out of 1254
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 7:37:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1279 out of 1279
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1279 out of 1279
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1279 out of 1279
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 7:37:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 83
+Feb 10, 2024 7:37:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1304 out of 1304
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1304 out of 1304
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1304 out of 1304
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 19:38:07 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:38:07 WARN  No build session currently active to reload.[0m
+2024.02.10 19:38:19 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:38:19 WARN  No build session currently active to reload.[0m
+2024.02.10 19:38:31 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:38:31 WARN  No build session currently active to reload.[0m
+2024.02.10 19:38:36 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:38:36 WARN  No build session currently active to reload.[0m
+2024.02.10 19:38:48 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:38:48 WARN  No build session currently active to reload.[0m
+2024.02.10 19:39:45 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:39:45 WARN  No build session currently active to reload.[0m
+2024.02.10 19:41:03 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:41:03 WARN  No build session currently active to reload.[0m
+2024.02.10 19:41:09 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:41:09 WARN  No build session currently active to reload.[0m
+2024.02.10 19:41:16 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:41:16 WARN  No build session currently active to reload.[0m
+2024.02.10 19:41:37 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:41:37 WARN  No build session currently active to reload.[0m
+2024.02.10 19:41:45 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:41:45 WARN  No build session currently active to reload.[0m
+2024.02.10 19:42:04 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:42:04 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 7:45:00 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1265 out of 1265
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1265 out of 1265
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1265 out of 1265
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 7:46:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1283 out of 1283
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1283 out of 1283
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1283 out of 1283
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 19:46:29 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:46:29 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 7:46:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1309 out of 1309
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1309 out of 1309
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1309 out of 1309
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 19:46:41 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:46:41 WARN  No build session currently active to reload.[0m
+2024.02.10 19:47:07 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:47:07 WARN  No build session currently active to reload.[0m
+2024.02.10 19:47:19 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:47:19 WARN  No build session currently active to reload.[0m
+2024.02.10 19:48:23 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:48:23 WARN  No build session currently active to reload.[0m
+2024.02.10 19:48:24 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:48:24 WARN  No build session currently active to reload.[0m
+2024.02.10 19:48:43 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:48:43 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 7:49:59 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1289 out of 1289
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1289 out of 1289
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1289 out of 1289
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 19:50:11 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:50:11 WARN  No build session currently active to reload.[0m
+2024.02.10 19:50:47 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:50:47 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 7:51:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1265 out of 1265
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1265 out of 1265
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1265 out of 1265
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 7:51:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1284 out of 1284
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1284 out of 1284
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1284 out of 1284
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 19:52:26 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:52:26 WARN  No build session currently active to reload.[0m
+2024.02.10 19:52:34 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:52:34 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 7:52:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1314 out of 1314
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1314 out of 1314
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1314 out of 1314
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 19:53:02 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:53:02 WARN  No build session currently active to reload.[0m
+2024.02.10 19:53:20 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:53:20 WARN  No build session currently active to reload.[0m
+2024.02.10 19:53:28 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:53:28 WARN  No build session currently active to reload.[0m
+2024.02.10 19:54:14 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:54:14 WARN  No build session currently active to reload.[0m
+2024.02.10 19:54:53 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:54:53 WARN  No build session currently active to reload.[0m
+2024.02.10 19:55:21 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:55:21 WARN  No build session currently active to reload.[0m
+2024.02.10 19:57:45 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:57:45 WARN  No build session currently active to reload.[0m
+2024.02.10 19:57:58 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:57:58 WARN  No build session currently active to reload.[0m
+2024.02.10 19:58:23 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:58:23 WARN  No build session currently active to reload.[0m
+2024.02.10 19:59:15 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:59:15 WARN  No build session currently active to reload.[0m
+2024.02.10 19:59:23 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:59:23 WARN  No build session currently active to reload.[0m
+2024.02.10 19:59:25 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 19:59:25 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:00:19 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1428 out of 1428
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1428 out of 1428
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1428 out of 1428
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 20:00:21 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:00:21 WARN  No build session currently active to reload.[0m
+2024.02.10 20:00:48 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:00:48 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:01:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1435 out of 1435
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1435 out of 1435
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1435 out of 1435
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 8:01:38 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1452 out of 1452
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1452 out of 1452
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1452 out of 1452
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 8:01:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2206
+Feb 10, 2024 8:02:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2416
+2024.02.10 20:02:36 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:02:36 WARN  No build session currently active to reload.[0m
+2024.02.10 20:02:44 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:02:44 WARN  No build session currently active to reload.[0m
+2024.02.10 20:02:46 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:02:46 WARN  No build session currently active to reload.[0m
+2024.02.10 20:03:38 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:03:38 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:04:26 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1512 out of 1512
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1512 out of 1512
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1512 out of 1512
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 20:04:32 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:04:32 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:05:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 2663
+Feb 10, 2024 8:05:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1510 out of 1510
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1510 out of 1510
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1510 out of 1510
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 20:06:05 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:06:05 WARN  No build session currently active to reload.[0m
+2024.02.10 20:06:13 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:06:13 WARN  No build session currently active to reload.[0m
+2024.02.10 20:06:15 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:06:15 WARN  No build session currently active to reload.[0m
+2024.02.10 20:06:32 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:06:32 WARN  No build session currently active to reload.[0m
+2024.02.10 20:07:02 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:07:02 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:08:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1515 out of 1515
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1515 out of 1515
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1515 out of 1515
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 8:08:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1532 out of 1532
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1532 out of 1532
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1532 out of 1532
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 20:08:18 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:08:18 WARN  No build session currently active to reload.[0m
+2024.02.10 20:10:53 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:10:54 WARN  No build session currently active to reload.[0m
+2024.02.10 20:11:33 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:11:37 WARN  No build session currently active to reload.[0m
+2024.02.10 20:11:42 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:11:45 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:11:56 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1512 out of 1512
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1512 out of 1512
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1512 out of 1512
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 20:12:04 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:12:06 WARN  No build session currently active to reload.[0m
+2024.02.10 20:12:14 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:12:17 WARN  No build session currently active to reload.[0m
+2024.02.10 20:12:20 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:12:28 WARN  No build session currently active to reload.[0m
+2024.02.10 20:12:29 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:12:29 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:12:33 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1566 out of 1566
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1566 out of 1566
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1566 out of 1566
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 20:12:34 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:12:34 WARN  No build session currently active to reload.[0m
+2024.02.10 20:12:36 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:12:36 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:13:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1558 out of 1558
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1558 out of 1558
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1558 out of 1558
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 8:13:35 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1559 out of 1559
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1559 out of 1559
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1559 out of 1559
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 8:14:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 3411
+Feb 10, 2024 8:14:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1597 out of 1597
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1597 out of 1597
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1597 out of 1597
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 20:14:34 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:14:34 WARN  No build session currently active to reload.[0m
+2024.02.10 20:14:36 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:14:36 WARN  No build session currently active to reload.[0m
+2024.02.10 20:14:52 WARN  No build session currently active to reload.[0m
+2024.02.10 20:15:10 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:15:10 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:16:21 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1622 out of 1622
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1622 out of 1622
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1622 out of 1622
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+Feb 10, 2024 8:16:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1639 out of 1639
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1639 out of 1639
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1639 out of 1639
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 20:16:29 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:16:29 WARN  No build session currently active to reload.[0m
+2024.02.10 20:16:57 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:16:57 WARN  No build session currently active to reload.[0m
+2024.02.10 20:17:45 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:17:45 WARN  No build session currently active to reload.[0m
+2024.02.10 20:17:52 WARN  No build session currently active to reload.[0m
+2024.02.10 20:19:02 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:19:02 WARN  No build session currently active to reload.[0m
+2024.02.10 20:20:37 WARN  No build session currently active to reload.[0m
+2024.02.10 20:21:39 WARN  No build session currently active to reload.[0m
+2024.02.10 20:22:10 WARN  No build session currently active to reload.[0m
+2024.02.10 20:22:15 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:22:15 WARN  No build session currently active to reload.[0m
+2024.02.10 20:22:48 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:22:48 WARN  No build session currently active to reload.[0m
+2024.02.10 20:22:49 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:22:49 WARN  No build session currently active to reload.[0m
+2024.02.10 20:23:57 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:23:57 WARN  No build session currently active to reload.[0m
+2024.02.10 20:24:06 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:24:06 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:24:10 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: java.util.NoSuchElementException: token 1603 out of 1603
+java.util.concurrent.CompletionException: java.util.NoSuchElementException: token 1603 out of 1603
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:347)
+	at java.base/java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:708)
+	at java.base/java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:510)
+	at java.base/java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2194)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1(CancelTokens.scala:40)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$future$1$adapted(CancelTokens.scala:38)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:484)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: java.util.NoSuchElementException: token 1603 out of 1603
+	at scala.meta.tokens.Tokens.apply(Tokens.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString.scala$meta$internal$metals$formatting$MultilineString$$hasStripMarginSuffix(MultilineString.scala:37)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:371)
+	at scala.meta.internal.metals.formatting.MultilineString$$anonfun$collectStringAndInterpolations$1.applyOrElse(MultilineString.scala:369)
+	at scala.collection.Iterator$$anon$7.hasNext(Iterator.scala:525)
+	at scala.collection.Iterator$$anon$6.hasNext(Iterator.scala:480)
+	at scala.collection.Iterator$$anon$9.hasNext(Iterator.scala:583)
+	at scala.collection.IterableOnceOps.find(IterableOnce.scala:633)
+	at scala.collection.IterableOnceOps.find$(IterableOnce.scala:631)
+	at scala.collection.AbstractIterator.find(Iterator.scala:1300)
+	at scala.meta.internal.metals.formatting.MultilineString.contribute(MultilineString.scala:432)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$5(OnTypeFormattingProvider.scala:68)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.loop$1(MetalsEnrichments.scala:289)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionList.acceptFirst(MetalsEnrichments.scala:298)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$4(OnTypeFormattingProvider.scala:67)
+	at scala.Option.map(Option.scala:242)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$3(OnTypeFormattingProvider.scala:56)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.$anonfun$format$2(OnTypeFormattingProvider.scala:55)
+	at scala.Option.flatMap(Option.scala:283)
+	at scala.meta.internal.metals.formatting.OnTypeFormattingProvider.format(OnTypeFormattingProvider.scala:53)
+	at scala.meta.internal.metals.MetalsLspService.$anonfun$onTypeFormatting$1(MetalsLspService.scala:1486)
+	at scala.meta.internal.metals.CancelTokens$.$anonfun$apply$2(CancelTokens.scala:26)
+	at scala.concurrent.Future$.$anonfun$apply$1(Future.scala:687)
+	at scala.concurrent.impl.Promise$Transformation.run(Promise.scala:467)
+	... 3 more
+
+2024.02.10 20:24:15 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:24:15 WARN  No build session currently active to reload.[0m
+2024.02.10 20:24:18 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:24:18 WARN  No build session currently active to reload.[0m
+2024.02.10 20:24:38 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:24:38 WARN  No build session currently active to reload.[0m
+2024.02.10 20:24:45 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:24:45 WARN  No build session currently active to reload.[0m
+2024.02.10 20:24:49 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:24:49 WARN  No build session currently active to reload.[0m
+2024.02.10 20:24:53 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:24:53 WARN  No build session currently active to reload.[0m
+2024.02.10 20:25:59 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:25:59 WARN  No build session currently active to reload.[0m
+2024.02.10 20:26:01 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:26:01 WARN  No build session currently active to reload.[0m
+2024.02.10 20:26:07 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:26:07 WARN  No build session currently active to reload.[0m
+2024.02.10 20:26:13 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:26:13 WARN  No build session currently active to reload.[0m
+2024.02.10 20:26:21 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:26:21 WARN  No build session currently active to reload.[0m
+2024.02.10 20:26:22 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:26:22 WARN  No build session currently active to reload.[0m
+2024.02.10 20:26:37 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:26:37 WARN  No build session currently active to reload.[0m
+2024.02.10 20:26:44 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:26:44 WARN  No build session currently active to reload.[0m
+2024.02.10 20:26:46 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/hangman.scala[0m
+2024.02.10 20:26:46 WARN  No build session currently active to reload.[0m
+2024.02.10 20:27:02 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Hangman.scala[0m
+2024.02.10 20:27:02 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:27:43 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4306
+2024.02.10 20:27:49 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:27:49 WARN  No build session currently active to reload.[0m
+2024.02.10 20:27:51 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:27:51 WARN  No build session currently active to reload.[0m
+2024.02.10 20:28:12 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Hangman.scala[0m
+2024.02.10 20:28:12 WARN  No build session currently active to reload.[0m
+2024.02.10 20:28:22 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:28:22 WARN  No build session currently active to reload.[0m
+2024.02.10 20:29:03 WARN  No build session currently active to reload.[0m
+2024.02.10 20:29:45 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:29:45 WARN  No build session currently active to reload.[0m
+2024.02.10 20:30:31 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:32:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 4563
+2024.02.10 20:32:59 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:32:59 WARN  No build session currently active to reload.[0m
+2024.02.10 20:34:20 WARN  No build session currently active to reload.[0m
+2024.02.10 20:35:05 WARN  No build session currently active to reload.[0m
+2024.02.10 20:36:01 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:36:01 WARN  No build session currently active to reload.[0m
+2024.02.10 20:36:02 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:36:02 WARN  No build session currently active to reload.[0m
+2024.02.10 20:36:05 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:36:05 WARN  No build session currently active to reload.[0m
+2024.02.10 20:37:57 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:37:57 WARN  No build session currently active to reload.[0m
+2024.02.10 20:38:46 WARN  No build session currently active to reload.[0m
+2024.02.10 20:38:58 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:38:58 WARN  No build session currently active to reload.[0m
+2024.02.10 20:39:01 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:39:02 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:39:02 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:39:02 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:39:03 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:39:03 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:39:05 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:39:05 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:39:05 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:39:06 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:39:06 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:39:06 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+Feb 10, 2024 8:39:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5032
+Feb 10, 2024 8:39:45 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5050
+Feb 10, 2024 8:40:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5118
+Feb 10, 2024 8:40:22 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5203
+2024.02.10 20:40:26 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:40:26 WARN  No build session currently active to reload.[0m
+2024.02.10 20:40:37 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:40:37 WARN  No build session currently active to reload.[0m
+2024.02.10 20:41:25 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:41:25 WARN  No build session currently active to reload.[0m
+2024.02.10 20:41:40 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:41:40 WARN  No build session currently active to reload.[0m
+2024.02.10 20:41:44 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:41:44 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:41:45 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:41:44 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:41:46 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:41:46 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:41:46 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:41:46 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.02.10 20:41:48 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala[0m
+Feb 10, 2024 8:41:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5451
+2024.02.10 20:42:48 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:42:48 WARN  No build session currently active to reload.[0m
+2024.02.10 20:42:54 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:42:54 WARN  No build session currently active to reload.[0m
+2024.02.10 20:42:55 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:42:55 WARN  No build session currently active to reload.[0m
+Feb 10, 2024 8:43:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 5621
+2024.02.10 20:43:08 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:43:08 WARN  No build session currently active to reload.[0m
+2024.02.10 20:43:11 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:43:11 WARN  No build session currently active to reload.[0m
+2024.02.10 20:43:50 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:43:50 WARN  No build session currently active to reload.[0m
+2024.02.10 20:43:57 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
+2024.02.10 20:43:57 WARN  No build session currently active to reload.[0m

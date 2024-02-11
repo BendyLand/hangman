@@ -1,0 +1,3 @@
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(reboot, Some(522b07da-c015-45e8-9019-9dca162ee0ea), Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtRebootNetwork, None, Some(CommandSource(console0)))[0m
+[0m[[0m[0mdebug[0m] [0m[0m> Exec(sbtRebootImpl, None, Some(CommandSource(console0)))[0m
