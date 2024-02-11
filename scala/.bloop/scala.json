@@ -1,15 +1,17 @@
 {
     "version": "1.4.0",
     "project": {
-        "name": "multilang-hangman",
-        "directory": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman",
-        "workspaceDir": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman",
+        "name": "scala",
+        "directory": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala",
+        "workspaceDir": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala",
         "sources": [
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman/src/main/scala",
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman/src/main/scala-3",
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman/src/main/java",
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman/target/scala-3.3.1/src_managed/main",
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman/hangman.scala"
+            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/src/main/scala",
+            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/src/main/scala-3",
+            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/src/main/java",
+            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/target/scala-3.3.1/src_managed/main",
+            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Hangman.scala",
+            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala",
+            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Gameboard.scala"
         ],
         "dependencies": [
             
@@ -19,11 +21,11 @@
             "/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_3/2.3.0/scala-parser-combinators_3-2.3.0.jar",
             "/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"
         ],
-        "out": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman/.bloop/multilang-hangman",
-        "classesDir": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman/.bloop/multilang-hangman/scala-3/classes",
+        "out": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/.bloop/scala",
+        "classesDir": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/.bloop/scala/scala-3/classes",
         "resources": [
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman/src/main/resources",
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman/target/scala-3.3.1/resource_managed/main"
+            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/src/main/resources",
+            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/target/scala-3.3.1/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -163,7 +165,7 @@
             "config": {
                 "home": "/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home",
                 "options": [
-                    "-Duser.dir=/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman"
+                    "-Duser.dir=/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala"
                 ]
             },
             "mainClass": [
@@ -172,11 +174,11 @@
             "runtimeConfig": {
                 "home": "/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home",
                 "options": [
-                    "-Duser.dir=/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman"
+                    "-Duser.dir=/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala"
                 ]
             },
             "classpath": [
-                "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/multiLang-hangman/.bloop/multilang-hangman/scala-3/classes",
+                "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/.bloop/scala/scala-3/classes",
                 "/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar",
                 "/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_3/2.3.0/scala-parser-combinators_3-2.3.0.jar",
                 "/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar"

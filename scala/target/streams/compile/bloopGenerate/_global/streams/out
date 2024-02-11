@@ -1,0 +1,4 @@
+[debug] [scala] Classpath dependencies List()
+[debug] [scala] Dependencies from configurations List()
+[debug] Bloop wrote the configuration of project 'scala' to '/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/.bloop/scala.json'
+[success] Generated .bloop/scala.json
