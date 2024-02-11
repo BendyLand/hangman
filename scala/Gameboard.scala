@@ -13,7 +13,7 @@ object GameBoard:
 
     def checkWin(): Boolean = 
         val correctGuesses = guessedChars.filter(c => randomWord.contains(c)).size 
-        correctGuesses == randomWord.size
+        correctGuesses == randomWord.distinct.size
 
     def checkNumWrong(): Int =
         val correctGuesses = guessedChars.filter(c => randomWord.contains(c))
