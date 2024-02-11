@@ -414,3 +414,15 @@ INFO: Unsupported notification method: $/setTrace
 2024.02.11 15:14:31 INFO  time: indexed workspace in 1.4s[0m
 2024.02.11 15:14:33 INFO  compiling scala-test (3 scala sources)[0m
 2024.02.11 15:14:33 INFO  time: compiled scala-test in 417μs[0m
+Feb 11, 2024 3:36:52 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 55
+2024.02.11 15:36:52 INFO  compiling scala-test (3 scala sources)[0m
+2024.02.11 15:36:52 INFO  time: compiled scala-test in 0.23s[0m
+Feb 11, 2024 4:16:30 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.02.11 17:59:07 INFO  compiling scala-test (3 scala sources)[0m
+2024.02.11 17:59:07 INFO  time: compiled scala-test in 0.19s[0m
+2024.02.11 17:59:07 INFO  compiling scala-test (3 scala sources)[0m
+2024.02.11 17:59:07 INFO  time: compiled scala-test in 0.19s[0m
+2024.02.11 17:59:07 INFO  compiling scala-test (3 scala sources)[0m
+2024.02.11 17:59:07 INFO  time: compiled scala-test in 0.14s[0m
