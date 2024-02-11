@@ -279,3 +279,7 @@ error: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/h
 2024.02.10 21:13:37 INFO  time: compiled scala-test in 0.47s
 Feb 10, 2024 9:14:20 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
 INFO: Unsupported notification method: $/setTrace
+2024.02.10 21:16:04 INFO  Shutting down server
+2024.02.10 21:16:04 INFO  shutting down Metals
+2024.02.10 21:16:04 INFO  Shut down connection with build server.
+2024.02.10 21:16:04 INFO  Exiting server

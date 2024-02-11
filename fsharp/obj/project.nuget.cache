@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "tXUDGobVH9ayNI6x1oiFhy3erApCYDy/6BrbEq3bzV1JktJHuBgq8gMQ8jzC37KVRx8w+KUg/FzAcS8my3/UkA==",
+  "success": true,
+  "projectFilePath": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/fsharp/hangman.fsproj",
+  "expectedPackageFiles": [
+    "/Users/benlandrette/.nuget/packages/fsharp.core/8.0.100/fsharp.core.8.0.100.nupkg.sha512"
+  ],
+  "logs": []
+}
