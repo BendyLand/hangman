@@ -16,6 +16,16 @@ let start =
 
 [<EntryPoint>]
 let main argv = 
-    let (startingBoard, randomWord) = GameBoard.create
     start
+    let (startingBoard, randomWord) = GameBoard.create
+    printfn $"%s{startingBoard}"
+    let gameStats = 
+        {
+            guessedChars = []
+            gameOver = false
+            numWrong = 0
+        }
+    let (newBoard, guessedChars) = update gameStats randomWord 'e' 
+    printfn $"%s{newBoard}"
+    printfn $"The random word was: %s{randomWord}"
     0
