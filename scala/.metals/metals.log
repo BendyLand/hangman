@@ -5991,3 +5991,7 @@ WARNING: Unmatched cancel notification for request id 5621
 2024.02.10 21:00:50 WARN  No build session currently active to reload.[0m
 2024.02.10 21:01:25 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Main.scala[0m
 2024.02.10 21:01:25 WARN  No build session currently active to reload.[0m
+2024.02.10 21:06:05 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Hangman.scala[0m
+2024.02.10 21:06:05 WARN  No build session currently active to reload.[0m
+2024.02.10 21:06:14 WARN  no build target for: /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/Hangman.scala[0m
+2024.02.10 21:06:14 WARN  No build session currently active to reload.[0m
