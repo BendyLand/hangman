@@ -10,7 +10,6 @@ type gameStats =
         numWrong: int
     }
 
-
 let chooseRandomWord =
     let rnd = Random()
     let words = "../words.txt" |> File.ReadAllLines
@@ -32,6 +31,15 @@ let create =
 
 let display board =
     printfn $"%s{board}"
+
+let chooseLetter = 
+    let choice = Console.ReadLine()
+    try
+        choice[0] |> Char.ToLower
+    with
+        | :? System.IndexOutOfRangeException -> 
+            printfn "Invalid input. Defaulting to 'a'"
+            'a'
 
 let chooseGameImage numWrong =
     match numWrong with
