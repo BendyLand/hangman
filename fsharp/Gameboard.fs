@@ -10,9 +10,6 @@ type gameStats =
         numWrong: int
     }
 
-    
-
-
 /// <summary>Checks if the guessed letter is in the random word</summary>
 /// <returns>The resulting word filled in with previously guessed letters,
 /// and the updated list of guessed letters</returns>
@@ -60,8 +57,12 @@ let guessLetter guessedLetters =
         with | :? IndexOutOfRangeException -> 
                 printfn "Invalid input. Defaulting to 'a'"
                 'a'
-    let newGuessedLetters = result :: guessedLetters
-    (result, newGuessedLetters)
+    if List.contains result guessedLetters then 
+        printfn $"Already guessed that letter!"
+        (result, guessedLetters)
+    else
+        let newGuessedLetters = result :: guessedLetters
+        (result, newGuessedLetters)
 
 /// <summary>Helper function to generate the proper game image.</summary>
 /// <returns>The proper game image based on the number of incorrect guesses.</returns>
@@ -90,12 +91,17 @@ let create =
 
 /// <summary>Checks if game is over either by winning or losing</summary>
 /// <returns>A boolean that represents whether or not the game is over</returns>
-let checkGameOver guessedChars word =
+let checkGameOver guessedChars (word : string) =
     let (numWrong, numRight) = checkNumWrong guessedChars word
+    let uniqueCorrectLetters =
+        word 
+        |> Seq.distinct
+        |> Seq.map string
+        |> String.concat ""
     if numWrong >= 7 then
         printfn $"Game over! The word was %s{word}"
         true
-    else if numRight = word.Length then
+    else if numRight >= uniqueCorrectLetters.Length then
         printfn $"You win! The word was %s{word}"
         true 
     else
