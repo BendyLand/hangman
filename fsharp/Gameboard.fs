@@ -10,6 +10,23 @@ type gameStats =
         numWrong: int
     }
 
+    
+
+
+/// <summary>Checks if the guessed letter is in the random word</summary>
+/// <returns>The resulting word filled in with previously guessed letters,
+/// and the updated list of guessed letters</returns>
+let checkLetter (guess : char) (word : string) (guessedChars : char list) = 
+    let resultWord = 
+        word
+        |> Seq.map (fun c -> 
+            if List.contains c guessedChars then
+                string c
+            else
+                "_")
+        |> String.concat " "
+    resultWord
+
 /// <summary>Checks the number of incorrectly made guesses.</summary>
 /// <returns>The number of incorrect guesses the user has made 
 /// up to the point of the function call.</returns>
@@ -17,7 +34,9 @@ let checkNumWrong (guessedChars : char list) (word : string) =
     let correctGuesses = 
         guessedChars 
         |> List.filter (fun c -> word.Contains(c))
-    guessedChars.Length - correctGuesses.Length
+    let numWrong = guessedChars.Length - correctGuesses.Length
+    let numRight = correctGuesses.Length
+    (numWrong, numRight)
 
 /// <summary>Selects a random word from the provided text file.</summary>
 /// <returns>A random word from the text file.</returns>
@@ -32,19 +51,20 @@ let display board =
     printfn $"%s{board}"
 
 /// <summary>Takes user input and trims to one character.</summary>
-/// <returns>The chosen character (or a default of 'a' for invalid inputs)
+/// <returns>The chosen character (or a default of 'a' for invalid inputs),
 /// and an updated list of guessed letters.</returns>
 let guessLetter guessedLetters = 
     let choice = Console.ReadLine()
     let result = 
-        try choice[0] |> Char.ToLower
+        try Char.ToLower choice[0] 
         with | :? IndexOutOfRangeException -> 
                 printfn "Invalid input. Defaulting to 'a'"
                 'a'
     let newGuessedLetters = result :: guessedLetters
-    // returning newGuessedLetters allows us to check incorrect guesses later
     (result, newGuessedLetters)
 
+/// <summary>Helper function to generate the proper game image.</summary>
+/// <returns>The proper game image based on the number of incorrect guesses.</returns>
 let chooseGameImage numWrong =
     match numWrong with
     | 0 -> Hangman.empty
@@ -67,3 +87,16 @@ let create =
         |> Seq.toArray
         |> String.concat " "
     (gameImage + "\n" + placeholder + "\n", word)
+
+/// <summary>Checks if game is over either by winning or losing</summary>
+/// <returns>A boolean that represents whether or not the game is over</returns>
+let checkGameOver guessedChars word =
+    let (numWrong, numRight) = checkNumWrong guessedChars word
+    if numWrong >= 7 then
+        printfn $"Game over! The word was %s{word}"
+        true
+    else if numRight = word.Length then
+        printfn $"You win! The word was %s{word}"
+        true 
+    else
+        false
