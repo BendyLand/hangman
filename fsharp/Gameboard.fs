@@ -10,18 +10,24 @@ type gameStats =
         numWrong: int
     }
 
+/// <summary>Checks the number of incorrectly made guesses.</summary>
+/// <returns>The number of incorrect guesses the user has made 
+/// up to the point of the function call.</returns>
 let checkNumWrong (guessedChars : char list) (word : string) = 
     let correctGuesses = 
         guessedChars 
         |> List.filter (fun c -> word.Contains(c))
     guessedChars.Length - correctGuesses.Length
 
+/// <summary>Selects a random word from the provided text file.</summary>
+/// <returns>A random word from the text file.</returns>
 let chooseRandomWord =
     let rnd = Random()
     let words = "../words.txt" |> File.ReadAllLines
     let randomWord = words |> Array.item (rnd.Next(words.Length))
     randomWord
 
+/// Prints the game board, made up of the game image and random word.
 let display board =
     printfn $"%s{board}"
 
