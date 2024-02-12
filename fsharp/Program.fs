@@ -14,6 +14,8 @@ let startGame =
 
 [<EntryPoint>]
 let main argv = 
+    // these values will begin the game loop
+    // also need defaults for numWrong (0), guessedChars ([]), gameOver (false)
     let (initialGameBoard, randomWord) = startGame
     printfn $"%s{initialGameBoard}"
     printfn $"The random word is %s{randomWord}"
