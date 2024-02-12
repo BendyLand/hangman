@@ -1,5 +1,4 @@
-﻿open Hangman
-open GameBoard
+﻿open GameBoard
 open System
 open System.IO
 
@@ -9,9 +8,13 @@ let greetUser =
     Let's start by choosing a letter: \n\
     "
 
+let startGame = 
+    greetUser
+    create
+
 [<EntryPoint>]
 let main argv = 
-    greetUser
-    let guess = chooseLetter
-    printfn $"Letter: %c{guess}"
+    let (initialGameBoard, randomWord) = startGame
+    printfn $"%s{initialGameBoard}"
+    printfn $"The random word is %s{randomWord}"
     0

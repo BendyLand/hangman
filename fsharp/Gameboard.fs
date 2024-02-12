@@ -14,8 +14,7 @@ let checkNumWrong (guessedChars : char list) (word : string) =
     let correctGuesses = 
         guessedChars 
         |> List.filter (fun c -> word.Contains(c))
-    let result = guessedChars.Length - correctGuesses.Length
-    result
+    guessedChars.Length - correctGuesses.Length
 
 let chooseRandomWord =
     let rnd = Random()
@@ -26,12 +25,15 @@ let chooseRandomWord =
 let display board =
     printfn $"%s{board}"
 
-let chooseLetter = 
+let guessLetter guessedLetters = 
     let choice = Console.ReadLine()
-    try choice[0] |> Char.ToLower
-    with | :? IndexOutOfRangeException -> 
-            printfn "Invalid input. Defaulting to 'a'"
-            'a'
+    let result = 
+        try choice[0] |> Char.ToLower
+        with | :? IndexOutOfRangeException -> 
+                printfn "Invalid input. Defaulting to 'a'"
+                'a'
+    let newGuessedLetters = result :: guessedLetters
+    (result, newGuessedLetters)
 
 let chooseGameImage numWrong =
     match numWrong with
@@ -43,3 +45,13 @@ let chooseGameImage numWrong =
     | 5 -> Hangman.oneLeg
     | 6 -> Hangman.finishedMan
     | _ -> Hangman.deadMan
+
+let create = 
+    let gameImage = Hangman.empty
+    let word = chooseRandomWord
+    let placeholder = 
+        word
+        |> Seq.map (fun c -> "_")
+        |> Seq.toArray
+        |> String.concat " "
+    (gameImage + "\n" + placeholder + "\n", word)
