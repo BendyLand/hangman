@@ -25,8 +25,9 @@ let chooseRandomWord =
 let display board =
     printfn $"%s{board}"
 
-// guessLetter returns your guessed letter (or a default of 'a'),
-// and an updated list of guessed letters
+/// <summary>Takes user input and trims to one character.</summary>
+/// <returns>The chosen character (or a default of 'a' for invalid inputs)
+/// and an updated list of guessed letters.</returns>
 let guessLetter guessedLetters = 
     let choice = Console.ReadLine()
     let result = 
@@ -35,7 +36,7 @@ let guessLetter guessedLetters =
                 printfn "Invalid input. Defaulting to 'a'"
                 'a'
     let newGuessedLetters = result :: guessedLetters
-    // returning updated letters allows us to check incorrect guesses later
+    // returning newGuessedLetters allows us to check incorrect guesses later
     (result, newGuessedLetters)
 
 let chooseGameImage numWrong =
@@ -49,7 +50,8 @@ let chooseGameImage numWrong =
     | 6 -> Hangman.finishedMan
     | _ -> Hangman.deadMan
 
-// `create` makes the initial game board and chooses the random word
+/// <summary>Creates the initial game board and chooses the random word.</summary>
+/// <returns>The complete game board and the randomly selected word.</returns>
 let create = 
     let gameImage = Hangman.empty
     let word = chooseRandomWord
@@ -58,5 +60,4 @@ let create =
         |> Seq.map (fun c -> "_")
         |> Seq.toArray
         |> String.concat " "
-    // returns complete board + placeholder text, and the random word 
     (gameImage + "\n" + placeholder + "\n", word)
