@@ -10,7 +10,7 @@ open System.Reflection
 [<assembly: System.Reflection.AssemblyCompanyAttribute("hangman")>]
 [<assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")>]
 [<assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")>]
-[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff65f7f33395031c4e48ea4e23cae36c54bf7ff5")>]
+[<assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5a975ebb389037082b247f652d95cd61e805561b")>]
 [<assembly: System.Reflection.AssemblyProductAttribute("hangman")>]
 [<assembly: System.Reflection.AssemblyTitleAttribute("hangman")>]
 [<assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")>]

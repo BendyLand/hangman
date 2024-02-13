@@ -3,13 +3,6 @@ module GameBoard
 open System
 open System.IO
 
-type gameStats =
-    {
-        guessedChars: char list
-        gameOver: bool
-        numWrong: int
-    }
-
 /// <summary>Checks if the guessed letter is in the random word</summary>
 /// <returns>The resulting word filled in with previously guessed letters,
 /// and the updated list of guessed letters</returns>
