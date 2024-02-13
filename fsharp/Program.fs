@@ -12,7 +12,7 @@ let startGame =
     greetUser
     create
 
-let rec runGame board randomWord guessedChars (numRight, numWrong) =
+let rec runGame board randomWord guessedChars (numWrong, numRight) =
     let (guess, guessedChars) = guessLetter guessedChars
     let resultWord = checkLetter guess randomWord guessedChars
     let (numWrong, numRight) = checkNumWrong guessedChars randomWord
