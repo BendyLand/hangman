@@ -5,7 +5,17 @@ def greet_player()
          "Let's start by choosing a letter: "
 end
 
-greet_player()
+def start_game()
+    greet_player()
+    board = Gameboard.new
+    until board.game_over
+        choice = board.choose_letter()
+        board.update_placeholder()
+        board.calculate_num_wrong()
+        board.check_game_over()
+        board.display(board.num_wrong)
+    end
+    board.check_game_over()
+end
 
-
-
+start_game()
