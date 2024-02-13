@@ -13,7 +13,7 @@ def start_game()
         board.update_placeholder()
         board.calculate_num_wrong()
         board.check_game_over()
-        board.display(board.num_wrong)
+        board.display()
     end
     board.check_game_over()
 end

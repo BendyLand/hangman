@@ -1,23 +1,23 @@
 require_relative "hangman"
 
 class Gameboard
-    @@guessed_chars = []
-    @@num_wrong = 0
-    @@random_word = ""
-    @@placeholder = ""
-    @@game_over = false
-
+    attr_accessor :random_word, :guessed_chars, :num_wrong, :placeholder, :game_over
+    
     def initialize() 
-        @@random_word = choose_random_word()
+        @random_word = choose_random_word()
+        @guessed_chars = []
+        @num_wrong = 0
+        @placeholder = ""
+        @game_over = false
     end
 
     def choose_random_word() 
         lines = File.read("../words.txt").split("\n")
-        return lines.sample()
+        @random_word = lines.sample()
     end
 
-    def choose_game_image(num_wrong)
-        case num_wrong
+    def choose_game_image()
+        case @num_wrong
         when 0
             Hangman::EMPTY
         when 1
@@ -42,76 +42,53 @@ class Gameboard
         begin
             input = input[0]
             input = input.downcase
-            unless @@guessed_chars.include?(input)
-                @@guessed_chars.push(input) 
+            unless @guessed_chars.include?(input)
+                @guessed_chars.push(input) 
             else
                 puts "Already guessed that letter!"    
             end
         rescue
             puts "Invalid input! Defaulting to 'a'"
-            unless @@guessed_chars.include?('a')
-                @@guessed_chars.push('a')
+            unless @guessed_chars.include?('a')
+                @guessed_chars.push('a')
             end
         end 
     end
 
     def update_placeholder()
-        @@placeholder = ""
-        @@random_word.length.times do |i|
-            if @@guessed_chars.include?(@@random_word[i])
-                @@placeholder += @@random_word[i] + " "
-            else
-                @@placeholder += "_ "
-            end
+        @placeholder = ""
+        @random_word.length.times do |i|
+            @placeholder += @guessed_chars.include?(@random_word[i]) ? 
+                @random_word[i] + " " :  "_ " 
         end
-        @@placeholder = @@placeholder.chomp
+        @placeholder = @placeholder.chomp
     end
 
     def calculate_num_wrong()
-        correct_guesses = @@guessed_chars.select do |c| 
+        correct_guesses = @guessed_chars.select do |c| 
             random_word.include?(c) 
         end 
-        @@num_wrong = @@guessed_chars.length - correct_guesses.length
+        @num_wrong = @guessed_chars.length - correct_guesses.length
     end
 
-    def display(num_wrong)
-        image = choose_game_image(num_wrong)
-        puts image + "\n" + @@placeholder + "\n"
+    def display()
+        image = choose_game_image()
+        puts image + "\n" + @placeholder + "\n"
     end
 
     def check_game_over()
-        correct_guesses = @@guessed_chars.select do |c| 
+        correct_guesses = @guessed_chars.select do |c| 
             random_word.include?(c) 
         end 
-        random_word_length = @@random_word.split("").uniq.join("").length
-        if @@num_wrong >= 7 
-            puts "Game over! The word was #{@@random_word}"
-            @@game_over = true
+        random_word_length = @random_word.split("").uniq.join("").length
+        if @num_wrong >= 7 
+            puts "Game over! The word was #{@random_word}"
+            @game_over = true
         elsif correct_guesses.length >= random_word_length
-            puts "You win! The word was #{@@random_word}"
-            @@game_over = true
+            puts "You win! The word was #{@random_word}"
+            @game_over = true
         else 
-            @@game_over = false
+            @game_over = false
         end
-    end
-
-    def guessed_chars 
-        @@guessed_chars
-    end
-
-    def num_wrong 
-        @@num_wrong
-    end
-
-    def random_word
-        @@random_word
-    end
-
-    def placeholder
-        @@placeholder
-    end
-
-    def game_over
-        @@game_over
     end
 end
