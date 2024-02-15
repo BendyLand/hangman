@@ -11,9 +11,23 @@ defmodule Gameboard do
                 "Error reading file"
         end
     end
+
+    def select_game_image(num_wrong) do
+        case num_wrong do
+            0 -> Hangman.empty()
+            1 -> Hangman.head()
+            2 -> Hangman.neck()
+            3 -> Hangman.one_arm()
+            4 -> Hangman.two_arms()
+            5 -> Hangman.one_leg()
+            6 -> Hangman.finished_man()
+            _ -> Hangman.dead_man()
+        end
+    end
 end
 
 
 defmodule Main do
     IO.puts Gameboard.choose_random_word()
+    IO.puts Gameboard.select_game_image(7)
 end
