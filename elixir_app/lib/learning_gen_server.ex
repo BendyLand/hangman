@@ -30,7 +30,7 @@ if err == :ok do
     Counter.add(pid, 3)
     Counter.add(pid, 5)
     count = Counter.get_count(pid)
-    IO.puts("Current count: #{count}")  # Output: "Current count: 2"
+    IO.puts("Current count: #{count}")
 else
     IO.puts "Error running Counter"
 end
