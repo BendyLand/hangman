@@ -1,8 +1,8 @@
 defmodule GameState do
     use GenServer
 
-    def init(init_arg) do
-        {:ok, init_arg}
+    def init(init_state) do
+        {:ok, init_state}
     end
 
     # this is explicitly called at the start of Main
@@ -11,7 +11,7 @@ defmodule GameState do
             word: choose_random_word(),
             guesses: ['a', 'b', 'c'], # just for testing; change later
             wrong_guesses: 0
-        }, name: __MODULE__)
+        })
     end
 
     # this is called when the GenServer initializes with start_link()
@@ -32,19 +32,19 @@ defmodule GameState do
     end
 
     # these get called from Main
-    def get_word() do
-        GenServer.call(__MODULE__, :get_word)
+    def get_word(pid) do
+        GenServer.call(pid, :get_word)
     end
 
-    def get_guesses() do
-        GenServer.call(__MODULE__, :get_guesses)
+    def get_guesses(pid) do
+        GenServer.call(pid, :get_guesses)
     end
 end
 
 defmodule Main do
-    {:ok, _pid} = GameState.start_link()
-    word    = GameState.get_word()
-    guesses = GameState.get_guesses()
+    {:ok, pid} = GameState.start_link()
+    word = GameState.get_word(pid)
+    guesses = GameState.get_guesses(pid)
 
     # basic testing
     IO.puts word    == "hangman" # true
