@@ -25,3 +25,57 @@ defmodule GameBoard do
         end
     end
 end
+
+defmodule GameState do
+    use GenServer
+
+    def init(init_state) do
+        {:ok, init_state}
+    end
+
+    def start_link() do
+        GenServer.start_link(__MODULE__, %{
+            word: choose_random_word(),
+            guesses: [],
+            wrong_guesses: 0
+        })
+    end
+
+    def guess_letter(pid, letter) do
+        GenServer.cast(pid, {:guess_letter, letter})
+    end
+
+    def handle_cast({:guess_letter, letter}, state) do
+        new_guesses = [letter | state.guesses]
+        new_state = %{state | guesses: new_guesses}
+        {:noreply, new_state}
+    end
+
+    def check_num_wrong(pid) do
+        GenServer.call(pid, :check_num_wrong)
+    end
+
+    def handle_call(:check_num_wrong, _from, state) do
+        {:reply, state.wrong_guesses, state}
+    end
+
+    def choose_random_word() do
+        GameBoard.choose_random_word()
+    end
+
+    def get_word(pid) do
+        GenServer.call(pid, :get_word)
+    end
+
+    def get_guesses(pid) do
+        GenServer.call(pid, :get_guesses)
+    end
+
+    def handle_call(:get_word, _from, state) do
+        {:reply, state.word, state}
+    end
+
+    def handle_call(:get_guesses, _from, state) do
+        {:reply, state.guesses, state}
+    end
+end

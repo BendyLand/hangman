@@ -45,16 +45,16 @@ end
 
 {err, pid} = StateManager.start_link("Ben", 26)
 if err == :ok do
-    name = StateManager.get_name(pid)
-    IO.puts name
+    # name = StateManager.get_name(pid)
+    # IO.puts name
 
     StateManager.add_item_to_extras(pid, "extra item 1")
     StateManager.add_item_to_extras(pid, "extra item 2")
     StateManager.add_item_to_extras(pid, "extra item 3")
     StateManager.add_item_to_extras(pid, "extra item 4")
 
-    extras = StateManager.get_extras(pid)
-    IO.inspect(extras)
+    # extras = StateManager.get_extras(pid)
+    # IO.inspect(extras)
 else
     IO.puts "Error!"
 end
@@ -91,8 +91,8 @@ if err == :ok do
     Counter.add(pid, 3)
     Counter.add(pid, 5)
 
-    count = Counter.get_count(pid)
-    IO.puts("Current count: #{count}")
+    # count = Counter.get_count(pid)
+    # IO.puts("Current count: #{count}")
 else
     IO.puts "Error running Counter"
 end
