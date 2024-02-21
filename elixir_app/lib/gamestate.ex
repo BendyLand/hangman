@@ -46,7 +46,6 @@ defmodule GameState do
     def handle_cast({:guess_letter, letter}, state) do
         if not Enum.member?(state.guesses, letter) do
             new_guesses = [letter | state.guesses]
-            IO.inspect new_guesses
             new_state = %{state | guesses: new_guesses}
             {:noreply, new_state}
         else
@@ -73,9 +72,17 @@ defmodule GameState do
                 IO.puts GameBoard.select_game_image(7)
                 IO.puts "Game over. The word was #{state.word}"
                 {:reply, true, state}
+
             Enum.count(correct_guesses) == random_word_length ->
+                image = GameBoard.select_game_image(state.wrong_guesses)
+                placeholder = GameBoard.construct_placeholder(
+                    state.guesses,
+                    state.word
+                )
+                GameBoard.display(image, placeholder)
                 IO.puts "You win! The word was #{state.word}"
                 {:reply, true, state}
+
             true ->
                 {:reply, false, state}
         end
