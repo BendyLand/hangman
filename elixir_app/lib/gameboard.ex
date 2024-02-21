@@ -1,6 +1,9 @@
 defmodule GameBoard do
     def run(pid) do
-        IO.puts GameState.get_word(pid) # for debugging
+        num_wrong = GameState.check_wrong_guesses(pid)
+        IO.puts GameBoard.select_game_image(num_wrong)
+
+        IO.puts GameState.get_word(pid) # print random word
 
         guess = IO.gets(:stdio, "Please enter a letter: ") |> String.trim()
         guess =
@@ -14,7 +17,6 @@ defmodule GameBoard do
         GameState.guess_letter(pid, guess)
         GameState.check_last_guess(pid)
 
-        IO.inspect(GameState.get_guesses(pid)) # for debugging
         game_over = GameState.check_game_over(pid)
         if game_over == false do
             run(pid)
@@ -108,6 +110,7 @@ defmodule GameState do
         end)
         cond do
             wrong_guesses >= 7 ->
+                IO.puts GameBoard.select_game_image(7)
                 IO.puts "Game over. The word was #{random_word}"
                 {:reply, true, state}
             Enum.count(correct_guesses) == String.length(random_word) ->
