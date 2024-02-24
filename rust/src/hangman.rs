@@ -1,4 +1,3 @@
-
 pub const EMPTY: &str = 
     "
            ______________

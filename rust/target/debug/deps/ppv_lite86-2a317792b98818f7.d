@@ -1,0 +1,8 @@
+/Users/benlandrette/ccode/storage/multi-language-practice/hangman/rust/target/debug/deps/libppv_lite86-2a317792b98818f7.rmeta: /Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/lib.rs /Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/soft.rs /Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/types.rs /Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/generic.rs
+
+/Users/benlandrette/ccode/storage/multi-language-practice/hangman/rust/target/debug/deps/ppv_lite86-2a317792b98818f7.d: /Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/lib.rs /Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/soft.rs /Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/types.rs /Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/generic.rs
+
+/Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/lib.rs:
+/Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/soft.rs:
+/Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/types.rs:
+/Users/benlandrette/.cargo/registry/src/index.crates.io-6f17d22bba15001f/ppv-lite86-0.2.17/src/generic.rs:
