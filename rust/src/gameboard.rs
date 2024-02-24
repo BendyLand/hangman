@@ -1,5 +1,17 @@
 use std::{fs::read_to_string, io::stdin};
 use rand::{Rng, thread_rng};
+use crate::hangman;
+
+pub enum Hangman {
+    Empty,
+    Head,
+    Neck,
+    OneArm,
+    TwoArms,
+    OneLeg,
+    FinishedMan,
+    DeadMan,
+}
 
 pub fn choose_random_word() -> String {
     let path = "../words.txt";
@@ -31,5 +43,18 @@ pub fn choose_letter() -> char {
             println!("Error reading input: {}. Defaulting to 'a'", err);
             'a'
         }
+    }
+}
+
+pub fn choose_game_image(state: Hangman) -> String {
+    match state {
+        Hangman::Empty       => String::from(hangman::EMPTY),
+        Hangman::Head        => String::from(hangman::HEAD),
+        Hangman::Neck        => String::from(hangman::NECK), 
+        Hangman::OneArm      => String::from(hangman::ONE_ARM), 
+        Hangman::TwoArms     => String::from(hangman::TWO_ARMS), 
+        Hangman::OneLeg      => String::from(hangman::ONE_LEG), 
+        Hangman::FinishedMan => String::from(hangman::FINISHED_MAN), 
+        Hangman::DeadMan     => String::from(hangman::DEAD_MAN), 
     }
 }
