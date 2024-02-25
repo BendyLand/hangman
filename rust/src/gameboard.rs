@@ -1,8 +1,9 @@
+#![allow(dead_code)]
 use std::{fs::read_to_string, io::stdin};
 use rand::{Rng, thread_rng};
 use crate::hangman;
 
-#[allow(dead_code)]
+#[derive(Debug)]
 pub enum Hangman {
     Empty,
     Head,
@@ -14,9 +15,23 @@ pub enum Hangman {
     DeadMan,
 }
 
+#[derive(Debug)]
+pub struct GameState {
+    pub word: String,
+    pub wrong_guesses: u8,
+    pub guessed_letters: Vec<char>,
+}
+
 pub fn choose_random_word() -> String {
     let path = "../words.txt";
-    let contents = read_to_string(path).expect("Error reading file.");
+    let contents = 
+        match read_to_string(path) {
+            Ok(file) => file,
+            Err(err) => {
+                println!("Error: {:?}\nDefaulting to word \"error\"", err);
+                String::from("error")
+            },
+        };
     let lines: Vec<&str> = contents.split("\n").collect();
     let rand_num = thread_rng().gen_range(0..lines.len());
     String::from(lines[rand_num])
