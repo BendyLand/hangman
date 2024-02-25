@@ -2,6 +2,7 @@ use std::{fs::read_to_string, io::stdin};
 use rand::{Rng, thread_rng};
 use crate::hangman;
 
+#[allow(dead_code)]
 pub enum Hangman {
     Empty,
     Head,
