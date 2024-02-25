@@ -9,4 +9,4 @@ def main():
 if __name__ == "__main__":
     main()
 else:
-    print("Wrong file")
+    print("Error starting application.")
