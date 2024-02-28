@@ -1,4 +1,3 @@
-#![allow(dead_code)]
 use std::{fs::read_to_string, io::stdin};
 use rand::{Rng, thread_rng};
 use crate::hangman;
@@ -53,9 +52,15 @@ pub fn guess_letter(state: &GameState) -> Vec<char> {
 
 fn add_guess(guess: char, current_guesses: &Vec<char>) -> Vec<char> {
     let mut new_vec = current_guesses.clone();
-    new_vec.push(guess);
-    new_vec.dedup();
-    new_vec
+    if current_guesses.contains(&guess) {
+        println!("Already guessed that letter!");
+        new_vec
+    }
+    else {
+        new_vec.push(guess);
+        new_vec.dedup();
+        new_vec
+    }
 }
 
 fn get_hangman_state(num_wrong: u8) -> Hangman {
