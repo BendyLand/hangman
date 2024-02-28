@@ -22,45 +22,55 @@ pub struct GameState {
     pub guessed_letters: Vec<char>,
 }
 
-pub fn update_game_state(current_state: GameState) -> GameState {
-    let num_wrong = check_num_wrong(&current_state);
-    GameState {
-        wrong_guesses: num_wrong,
-        ..current_state
-    }
-}
-
-fn check_num_wrong(state: &GameState) -> u8 {
+pub fn update_num_wrong(state: GameState) -> GameState {
     let num_wrong = 
         state.guessed_letters
             .iter()
             .filter(|x| !state.word.contains(**x))
             .collect::<Vec<&char>>()
-            .len();
-    num_wrong as u8
+            .len() as u8;
+    GameState {
+        wrong_guesses: num_wrong,
+        ..state
+    }
 }
 
-pub fn guess_letter() -> char {
+pub fn add_guess(state: GameState) -> GameState {
     println!("Please enter a letter: ");
+    let mut temp = state.guessed_letters.clone();
     let mut input = String::new();
     match stdin().read_line(&mut input) {
         Ok(_) => {
             let result = input.trim();
             if !result.is_empty() {
-                result
-                    .chars()
-                    .next()
-                    .unwrap()
-                    .to_ascii_lowercase()
+                let final_result = 
+                    result
+                        .chars()
+                        .next()
+                        .unwrap()
+                        .to_ascii_lowercase();
+                temp.push(final_result);
+                GameState {
+                    guessed_letters: temp,
+                    ..state
+                }
             }
             else {
                 println!("Error getting input. Defaulting to 'a'");
-                'a'
+                temp.push('a');
+                GameState {
+                    guessed_letters: temp,
+                    ..state
+                }
             }
         },
         Err(err) => {
             println!("Error reading input: {}. Defaulting to 'a'", err);
-            'a'
+            temp.push('a');
+            GameState {
+                guessed_letters: temp,
+                ..state
+            }
         }
     }
 }

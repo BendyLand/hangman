@@ -2,8 +2,6 @@ mod hangman;
 mod gameboard;
 use gameboard::{GameState};
 
-use crate::gameboard::update_game_state;
-
 fn main() {
     let random_word = gameboard::choose_random_word();
     greet();
@@ -16,13 +14,10 @@ fn main() {
         };
     // Game loop
     loop {
-        let guess = gameboard::guess_letter();
-        let new_state = update_game_state(initial_state);
-        println!("{}", guess);
-        println!("{:?}", new_state);
+        let guessed_state = gameboard::add_guess(initial_state);
+        let updated_state = gameboard::update_num_wrong(guessed_state);
 
-
-
+        println!("{:?}", updated_state);
 
         break;
     }
