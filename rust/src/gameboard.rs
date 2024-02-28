@@ -89,11 +89,14 @@ pub fn check_num_wrong(state: &GameState) -> u8 {
 pub fn check_game_over(state: &GameState) -> bool {
     let correct_guesses =
         state.guessed_letters.len() - check_num_wrong(&state) as usize;
+    let mut random_word_as_vec = state.word.chars().collect::<Vec<char>>();
+    random_word_as_vec.dedup();
+    let correct_num_letters = random_word_as_vec.len();
     if state.wrong_guesses >= 7 {
         println!("Game over. The word was {}", state.word);
         true
     }
-    else if correct_guesses >= state.word.len() {
+    else if correct_guesses >= correct_num_letters {
         println!("You win! The word was {}", state.word);
         true
     }
