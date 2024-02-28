@@ -15,29 +15,32 @@ pub enum Hangman {
     DeadMan,
 }
 
-#[derive(Debug)]
+#[derive(Debug, Clone)]
 pub struct GameState {
     pub word: String,
     pub wrong_guesses: u8,
     pub guessed_letters: Vec<char>,
 }
 
-pub fn choose_random_word() -> String {
-    let path = "../words.txt";
-    let contents = 
-        match read_to_string(path) {
-            Ok(file) => file,
-            Err(err) => {
-                println!("Error: {:?}\nDefaulting to word \"error\"", err);
-                String::from("error")
-            },
-        };
-    let lines: Vec<&str> = contents.split("\n").collect();
-    let rand_num = thread_rng().gen_range(0..lines.len());
-    String::from(lines[rand_num])
+pub fn update_game_state(current_state: GameState) -> GameState {
+    let num_wrong = check_num_wrong(&current_state);
+    GameState {
+        wrong_guesses: num_wrong,
+        ..current_state
+    }
 }
 
-pub fn choose_letter() -> char {
+fn check_num_wrong(state: &GameState) -> u8 {
+    let num_wrong = 
+        state.guessed_letters
+            .iter()
+            .filter(|x| !state.word.contains(**x))
+            .collect::<Vec<&char>>()
+            .len();
+    num_wrong as u8
+}
+
+pub fn guess_letter() -> char {
     println!("Please enter a letter: ");
     let mut input = String::new();
     match stdin().read_line(&mut input) {
@@ -73,4 +76,19 @@ pub fn choose_game_image(state: Hangman) -> String {
         Hangman::FinishedMan => String::from(hangman::FINISHED_MAN), 
         Hangman::DeadMan     => String::from(hangman::DEAD_MAN), 
     }
+}
+
+pub fn choose_random_word() -> String {
+    let path = "../words.txt";
+    let contents = 
+        match read_to_string(path) {
+            Ok(file) => file,
+            Err(err) => {
+                println!("Error: {:?}\nDefaulting to word \"error\"", err);
+                String::from("error")
+            },
+        };
+    let lines: Vec<&str> = contents.split("\n").collect();
+    let rand_num = thread_rng().gen_range(0..lines.len());
+    String::from(lines[rand_num])
 }
