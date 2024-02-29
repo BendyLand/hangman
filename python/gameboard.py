@@ -9,7 +9,9 @@ class GameBoard:
         self.guessed_letters = []
 
     def check_game_over(self):
-        correct_guesses = len(list(filter(lambda c: c in self.word, self.guessed_letters)))
+        correct_guesses = len(
+            list(filter(lambda c: c in self.word, self.guessed_letters))
+        )
         if self.num_wrong >= 7:
             print(f"Game over. The word was {self.word}")
             return True
@@ -20,7 +22,9 @@ class GameBoard:
             return False
 
     def check_num_wrong(self):
-        self.num_wrong = len(list(filter(lambda c: c not in self.word, self.guessed_letters)))
+        self.num_wrong = len(
+            list(filter(lambda c: c not in self.word, self.guessed_letters))
+        )
         return self.num_wrong
 
     def guess_letter(self):
