@@ -2,9 +2,10 @@ from gameboard import *
 
 def main():
     greet()
-    random_word = choose_random_word()
-    print(f"Random word: {random_word}")
-
+    game = GameBoard()
+    print(f"Random word: {game.word}")
+    game.guess_letter()
+    print(f"Guessed letters: {game.guessed_letters}")
 
 def greet():
     print("Welcome to Hangman! We have already chosen a random word for you.")
