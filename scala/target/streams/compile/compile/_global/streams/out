@@ -1,13 +1,7 @@
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala:5:7 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m5 |[0m[33mimport[0m hangman.*[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m       ^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m       Not found: hangman[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Hangman.scala:3:7 [0m[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m3 |[0m[33mimport[0m gameboard.GameBoard.randomWord [0m
-[0m[[0m[31merror[0m] [0m[0m[31m[31m  |[0m       ^^^^^^^^^[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m       Not found: gameboard[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m[0m
-[0m[[0m[31merror[0m] [0m[0m[31m  |[0m longer explanation available when compiling with `-explain`[0m
-[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m-- [E006] Not Found Error: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala:21:8 [0m[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m21 |[0m        result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m[31m   |[0m        ^^^^^^[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m        Not found: result[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m[0m
+[0m[[0m[31merror[0m] [0m[0m[31m   |[0m longer explanation available when compiling with `-explain`[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

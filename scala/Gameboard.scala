@@ -16,10 +16,9 @@ object GameBoard:
         correctGuesses == randomWord.distinct.size
 
     def checkNumWrong: Int =
-        val correctGuesses = guessedChars.filter(c => randomWord.contains(c))
-        val result = guessedChars.size - correctGuesses.size  
-        numWrong = result
-        result
+        val numIncorrectGuesses = guessedChars.filterNot(c => randomWord.contains(c)).size
+        numWrong = numIncorrectGuesses
+        numIncorrectGuesses
 
     def getRandomWord: String =
         val words = fromFile("../words.txt").getLines().toArray
