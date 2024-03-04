@@ -1,8 +1,8 @@
-package gameboard 
+package bland.gameboard 
 
 import scala.io.StdIn
 import scala.io.Source.*
-import hangman.*
+import bland.hangman.*
 
 object GameBoard:
     val randomWord = GameBoard.getRandomWord

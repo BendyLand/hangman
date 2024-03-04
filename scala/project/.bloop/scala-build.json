@@ -2,15 +2,15 @@
     "version": "1.4.0",
     "project": {
         "name": "scala-build",
-        "directory": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project",
-        "workspaceDir": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project",
+        "directory": "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project",
+        "workspaceDir": "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project",
         "sources": [
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project/src/main/scala",
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project/src/main/scala-2.12",
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project/src/main/scala-2",
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project/src/main/java",
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project/src/main/scala-sbt-1.0",
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project/target/scala-2.12/sbt-1.0/src_managed/main"
+            "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project/src/main/scala",
+            "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project/src/main/scala-2.12",
+            "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project/src/main/scala-2",
+            "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project/src/main/java",
+            "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project/src/main/scala-sbt-1.0",
+            "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project/target/scala-2.12/sbt-1.0/src_managed/main"
         ],
         "dependencies": [
             
@@ -103,11 +103,11 @@
             "/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar",
             "/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/typesafe/config/1.4.2/config-1.4.2.jar"
         ],
-        "out": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project/.bloop/scala-build",
-        "classesDir": "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project/.bloop/scala-build/scala-2.12/sbt-1.0/classes",
+        "out": "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project/.bloop/scala-build",
+        "classesDir": "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project/.bloop/scala-build/scala-2.12/sbt-1.0/classes",
         "resources": [
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project/src/main/resources",
-            "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project/target/scala-2.12/sbt-1.0/resource_managed/main"
+            "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project/src/main/resources",
+            "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project/target/scala-2.12/sbt-1.0/resource_managed/main"
         ],
         "scala": {
             "organization": "org.scala-lang",
@@ -214,7 +214,7 @@
             "config": {
                 "home": "/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home",
                 "options": [
-                    "-Duser.dir=/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project"
+                    "-Duser.dir=/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project"
                 ]
             },
             "mainClass": [
@@ -223,11 +223,11 @@
             "runtimeConfig": {
                 "home": "/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home",
                 "options": [
-                    "-Duser.dir=/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project"
+                    "-Duser.dir=/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project"
                 ]
             },
             "classpath": [
-                "/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/project/.bloop/scala-build/scala-2.12/sbt-1.0/classes",
+                "/Users/benlandrette/ccode/multi-language-practice/hangman/scala/project/.bloop/scala-build/scala-2.12/sbt-1.0/classes",
                 "/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/sbt-bloop_2.12_1.0/1.5.13/sbt-bloop_2.12_1.0-1.5.13.jar",
                 "/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/ch/epfl/scala/bloop-config_2.12/1.5.5/bloop-config_2.12-1.5.5.jar",
                 "/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/github/plokhotnyuk/jsoniter-scala/jsoniter-scala-core_2.12/2.4.0/jsoniter-scala-core_2.12-2.4.0.jar",

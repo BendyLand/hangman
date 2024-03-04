@@ -20,13 +20,13 @@
 [0m[[0m[0mdebug[0m] [0m[0mInitial set of included nodes: Main$package, run, hangman.HangMan, gameboard.GameBoard[0m
 [0m[[0m[0mdebug[0m] [0m[0mRecompiling all sources: number of invalidated sources > 50.0 percent of all sources[0m
 [0m[[0m[0mdebug[0m] [0m[0mcompilation cycle 1[0m
-[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/target/scala-3.3.1/classes ...[0m
+[0m[[0m[0minfo[0m] [0m[0mcompiling 3 Scala sources to /Users/benlandrette/ccode/multi-language-practice/hangman/scala/target/scala-3.3.1/classes ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mReturning already retrieved and compiled bridge: /Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-sbt-bridge/3.3.1/scala3-sbt-bridge-3.3.1.jar.[0m
-[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 7c422c46 for Scala Compiler version 3.3.1[0m
+[0m[[0m[0mdebug[0m] [0m[0m[zinc] Running cached compiler 67b37db4 for Scala Compiler version 3.3.1[0m
 [0m[[0m[0mdebug[0m] [0m[0m[zinc] The Scala compiler is invoked with:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-bootclasspath[0m
 [0m[[0m[0mdebug[0m] [0m[0m	/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala3-library_3/3.3.1/scala3-library_3-3.3.1.jar:/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/scala-library/2.13.10/scala-library-2.13.10.jar[0m
 [0m[[0m[0mdebug[0m] [0m[0m	-classpath[0m
-[0m[[0m[0mdebug[0m] [0m[0m	/Users/benlandrette/ccode/storage/misc-projects/multi-language-practice/hangman/scala/target/scala-3.3.1/classes:/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_3/2.3.0/scala-parser-combinators_3-2.3.0.jar[0m
-[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 0.682261542 s[0m
+[0m[[0m[0mdebug[0m] [0m[0m	/Users/benlandrette/ccode/multi-language-practice/hangman/scala/target/scala-3.3.1/classes:/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scala-lang/modules/scala-parser-combinators_3/2.3.0/scala-parser-combinators_3-2.3.0.jar[0m
+[0m[[0m[0mdebug[0m] [0m[0mScala compilation took 1.660558083 s[0m
 [0m[[0m[0mdebug[0m] [0m[0mdone compiling[0m

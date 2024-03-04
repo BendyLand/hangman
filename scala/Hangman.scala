@@ -1,6 +1,6 @@
-package hangman
+package bland.hangman
 
-import gameboard.GameBoard.randomWord 
+import bland.gameboard.GameBoard.randomWord 
  
 object HangMan:
     val empty = 

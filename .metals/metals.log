@@ -754,3 +754,85 @@ org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Request window/showMessageRequ
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.lang.Thread.run(Thread.java:1623)
 [0m
+2024.03.04 10:43:29 INFO  Started: Metals version 1.2.2 in folders '/Users/benlandrette/ccode/multi-language-practice/hangman' for client Visual Studio Code 1.87.0.[0m
+10:43:29.906 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- Flyway Community Edition 9.22.3 by Redgate
+10:43:29.907 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- See release notes here: https://rd.gt/416ObMi
+10:43:29.907 [pool-1-thread-1] INFO org.flywaydb.core.internal.license.VersionPrinter -- 
+10:43:29.908 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/callback' ...
+10:43:29.908 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/callback using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@7e32c033 ...
+10:43:29.908 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Unable to resolve location classpath:db/callback.
+10:43:29.908 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classpath resources at 'classpath:db/migration' ...
+10:43:29.908 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Determining location urls for classpath:db/migration using ClassLoader jdk.internal.loader.ClassLoaders$AppClassLoader@7e32c033 ...
+10:43:29.908 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning URL: jar:file:/Users/benlandrette/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/org/scalameta/metals_2.13/1.2.2/metals_2.13-1.2.2.jar!/db/migration
+10:43:29.910 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/
+10:43:29.910 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V1__Create_tables.sql
+10:43:29.910 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V2__Server_discovery.sql
+10:43:29.910 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V3__Jar_symbols.sql
+10:43:29.910 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Found resource: db/migration/V4__Fingerprints.sql
+10:43:29.910 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.classpath.ClassPathScanner -- Scanning for classes at classpath:db/migration
+10:43:29.911 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:43:29.912 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V1__Create_tables.sql
+10:43:29.912 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V3__Jar_symbols.sql
+10:43:29.912 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V2__Server_discovery.sql
+10:43:29.912 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.resource.ResourceNameValidator -- Validating V4__Fingerprints.sql
+10:43:29.965 [pool-1-thread-1] INFO org.flywaydb.core.FlywayExecutor -- Database: jdbc:h2:file:/Users/benlandrette/ccode/multi-language-practice/hangman/.metals/metals (H2 2.2)
+10:43:29.965 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Driver: H2 JDBC Driver 2.2.224 (2023-09-17)
+10:43:29.965 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- DDL Transactions Supported: false
+10:43:29.966 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Schemas: 
+10:43:29.966 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.schemahistory.SchemaHistoryFactory -- Default schema: null
+10:43:29.967 [pool-1-thread-1] WARN org.flywaydb.core.internal.database.base.Database -- Flyway upgrade recommended: H2 2.2.224 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.2.220.
+10:43:29.968 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.callback.SqlScriptCallbackFactory -- Scanning for SQL callbacks ...
+10:43:29.968 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:43:29.970 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbValidate -- Validating migrations ...
+10:43:29.972 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:43:29.975 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:43:29.975 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+10:43:29.975 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+10:43:29.975 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+10:43:29.975 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+10:43:29.976 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/ (filename: )
+10:43:29.976 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V1__Create_tables.sql (filename: V1__Create_tables.sql)
+10:43:29.976 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V3__Jar_symbols.sql (filename: V3__Jar_symbols.sql)
+10:43:29.976 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V2__Server_discovery.sql (filename: V2__Server_discovery.sql)
+10:43:29.976 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.scanner.Scanner -- Filtering out resource: db/migration/V4__Fingerprints.sql (filename: V4__Fingerprints.sql)
+10:43:29.980 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbValidate -- Successfully validated 4 migrations (execution time 00:00.008s)
+10:43:29.980 [pool-1-thread-1] DEBUG org.flywaydb.core.internal.command.DbSchemas -- Skipping creation of existing schema: "PUBLIC"
+10:43:29.982 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Current version of schema "PUBLIC": 4
+10:43:29.983 [pool-1-thread-1] INFO org.flywaydb.core.internal.command.DbMigrate -- Schema "PUBLIC" is up to date. No migration necessary.
+10:43:29.990 [pool-1-thread-1] DEBUG org.flywaydb.core.FlywayExecutor -- Memory usage: 34 of 104M
+2024.03.04 10:43:30 INFO  Attempting to connect to the build server...[0m
+2024.03.04 10:43:30 INFO  Bloop uses /Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home defined at /Users/benlandrette/.bloop/bloop.json[0m
+2024.03.04 10:43:30 INFO  tracing is disabled for protocol BSP, to enable tracing of incoming and outgoing JSON messages create an empty file at /Users/benlandrette/ccode/multi-language-practice/hangman/.metals/bsp.trace.json or /Users/benlandrette/Library/Caches/org.scalameta.metals/bsp.trace.json[0m
+2024.03.04 10:43:30 INFO  time: Connected to build server in 0.36s[0m
+2024.03.04 10:43:30 INFO  Connected to Build server: Bloop v1.5.13[0m
+2024.03.04 10:43:31 INFO  time: indexed workspace in 1.32s[0m
+2024.03.04 10:43:33 INFO  no build target found for /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Hangman.scala. Using presentation compiler with project's scala-library version: 3.3.1[0m
+Mar 04, 2024 10:50:58 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 12
+Mar 04, 2024 10:51:01 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 18
+Mar 04, 2024 10:51:26 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 24
+Mar 04, 2024 11:11:21 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: A severe compiler error occurred, full details of the error can be found in the error report /Users/benlandrette/ccode/multi-language-practice/hangman/.metals/.reports/metals-full/2024-03-04/r_compiler-error_11-11-21-873.md
+2024.03.04 12:01:57 WARN  Using indexes to guess the definition of Unit[0m
+Mar 04, 2024 12:02:04 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 102
+2024.03.04 12:02:04 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 12:02:04 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 12:02:08 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 12:02:08 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Hangman.scala[0m
+2024.03.04 12:02:14 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Main.scala[0m
+2024.03.04 12:02:14 INFO  skipping build import with status 'Installed'[0m
+Mar 04, 2024 12:02:32 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 167
+Mar 04, 2024 12:02:36 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 199
+2024.03.04 12:02:36 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 12:02:36 INFO  skipping build import with status 'Installed'[0m
+Mar 04, 2024 12:02:41 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 229
+2024.03.04 12:02:41 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 12:02:41 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Hangman.scala[0m
+2024.03.04 12:02:42 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Hangman.scala[0m
+2024.03.04 12:02:42 INFO  skipping build import with status 'Installed'[0m

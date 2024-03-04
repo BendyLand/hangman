@@ -1,5 +1,5 @@
-import hangman.*
-import gameboard.*
+import bland.hangman.*
+import bland.gameboard.*
 
 @main def run() =
     welcomePlayer(GameBoard.randomWord)
