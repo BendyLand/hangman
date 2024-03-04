@@ -1,11 +1,16 @@
 package bland.hangman
 
-class App {
+object App {
     fun greetPlayer() {
-        println("Welcome to Hangman!")
+        println("Welcome to Hangman! We have already chosen a random word for you.\n" +
+                "Let's start by choosing a letter: ")
     }
 }
 
 fun main() {
-    println(Hangman.empty)
+    App.greetPlayer()
+    val word = GameBoard.getRandomWord()
+    GameBoard.create(word)
+    println(GameBoard.gameboard)
+    println("The word is $word")
 }
