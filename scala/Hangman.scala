@@ -2,7 +2,7 @@ package bland.hangman
 
 import bland.gameboard.GameBoard.randomWord 
  
-object HangMan:
+object Hangman:
     val empty = 
         """
                 _____________

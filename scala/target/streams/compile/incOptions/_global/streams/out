@@ -1,47 +1,47 @@
 [0m[[0m[0mdebug[0m] [0m[0mCreated transactional ClassFileManager with tempDir = /Users/benlandrette/ccode/multi-language-practice/hangman/scala/target/scala-3.3.1/classes.bak[0m
 [0m[[0m[0mdebug[0m] [0m[0mAbout to delete class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	HangMan.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GameBoard$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GameBoard.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	run.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	HangMan$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GameBoard.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HangMan.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	HangMan.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GameBoard$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GameBoard.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	run.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package$.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	HangMan$.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GameBoard.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HangMan.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mWe backup class files:[0m
-[0m[[0m[0mdebug[0m] [0m[0m	HangMan.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GameBoard$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GameBoard.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	run.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	HangMan$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GameBoard.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HangMan.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	HangMan.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GameBoard$.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	GameBoard.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	run.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package$.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	HangMan$.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	GameBoard.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	HangMan.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mRegistering generated classes:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GameBoard$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GameBoard.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Hangman$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	run.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	HangMan$.class[0m
-[0m[[0m[0mdebug[0m] [0m[0m	HangMan.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Hangman.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GameBoard$.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	GameBoard.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Hangman$.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	run.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package$.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	HangMan$.tasty[0m
-[0m[[0m[0mdebug[0m] [0m[0m	HangMan.tasty[0m
+[0m[[0m[0mdebug[0m] [0m[0m	Hangman.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0m	Main$package.tasty[0m
 [0m[[0m[0mdebug[0m] [0m[0mRemoving the temporary directory used for backing up class files: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/target/scala-3.3.1/classes.bak[0m

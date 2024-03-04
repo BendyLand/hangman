@@ -27,7 +27,7 @@ object GameBoard:
         words(num)
 
     def create(word: String): Unit =
-        val image = HangMan.empty
+        val image = Hangman.empty
         val placeholder = for _ <- 1 to word.size yield "_ "
         gameBoard = 
             image + "\n" + "\t" + placeholder.mkString(" ") + "\n"
@@ -52,18 +52,18 @@ object GameBoard:
 
     def chooseGameImage(numWrong: Int): String = 
         numWrong match
-            case 0 => HangMan.empty
-            case 1 => HangMan.head
-            case 2 => HangMan.neck
-            case 3 => HangMan.oneArm
-            case 4 => HangMan.twoArms
-            case 5 => HangMan.oneLeg
-            case 6 => HangMan.finishedMan
+            case 0 => Hangman.empty
+            case 1 => Hangman.head
+            case 2 => Hangman.neck
+            case 3 => Hangman.oneArm
+            case 4 => Hangman.twoArms
+            case 5 => Hangman.oneLeg
+            case 6 => Hangman.finishedMan
             case _ => 
                 gameOver = true
                 println("Game over!")
                 println(s"The word was: $randomWord")
-                HangMan.deadMan
+                Hangman.deadMan
 
     def chooseLetter(): Char = 
         val input = StdIn.readLine()
