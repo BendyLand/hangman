@@ -1,10 +1,10 @@
 package utils
 
 import (
-	"os"
-	"fmt"
 	"bufio"
+	"fmt"
 	"math/rand"
+	"os"
 	"strings"
 )
 

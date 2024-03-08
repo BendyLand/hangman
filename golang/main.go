@@ -8,6 +8,8 @@ func main() {
 	greet()
 	state := Init()
 	fmt.Println("Initial state:", state)
+	placeholder := ConstructPlaceholder(&state)
+	fmt.Println(placeholder)
 }
 
 func greet() {
