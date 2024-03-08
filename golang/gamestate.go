@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"strings"
 	"golang/pkgs/utils"
+	"strings"
 	"unicode/utf8"
 )
 
@@ -12,6 +12,32 @@ type GameState struct {
 	gameOver       bool
 	guessedLetters []rune
 	randomWord     string
+}
+
+func CheckGameOver(state *GameState) {
+	if state.numGuesses >= 7 {
+		fmt.Println("Game over. The word was:", state.randomWord)
+		state.gameOver = true
+	}
+	wordChars := make([]rune, len(state.randomWord))
+	for i, char := range state.randomWord {
+		wordChars[i] = char
+	}
+	correctGuesses := FilterContains(state.guessedLetters, wordChars)
+	if len(correctGuesses) == len(state.randomWord) {
+		fmt.Println("You win! The word was:", state.randomWord)
+		state.gameOver = true
+	}
+}
+
+func FilterContains(guesses []rune, wordLetters []rune) []rune {
+	var correctGuesses []rune
+	for _, guess := range guesses {
+		if Contains(guess, wordLetters) {
+			correctGuesses = append(correctGuesses, guess)
+		}
+	}
+	return correctGuesses
 }
 
 func Contains(elem rune, list []rune) bool {

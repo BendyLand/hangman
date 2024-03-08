@@ -8,8 +8,12 @@ func main() {
 	greet()
 	state := Init()
 	fmt.Println("Initial state:", state)
-	placeholder := ConstructPlaceholder(&state)
-	fmt.Println(placeholder)
+	for state.gameOver {
+		placeholder := ConstructPlaceholder(&state)
+		fmt.Println(placeholder)
+		GuessLetter(&state)
+		CheckGameOver(&state)
+	}
 }
 
 func greet() {
