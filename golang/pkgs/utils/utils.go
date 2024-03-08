@@ -30,10 +30,10 @@ func (chars Chars) Unique() Chars {
 	return resultArr
 }
 
-func (guesses Chars) FilterContains(wordLetters []rune) Chars {
-	var correctGuesses []rune
+func (guesses Chars) FilterContains(wordLetters Chars) Chars {
+	var correctGuesses Chars
 	for _, guess := range guesses {
-		if Chars(wordLetters).Contains(guess) && !Chars(correctGuesses).Contains(guess) {
+		if wordLetters.Contains(guess) && !correctGuesses.Contains(guess) {
 			correctGuesses = append(correctGuesses, guess)
 		}
 	}
