@@ -18,7 +18,7 @@ type GameState struct {
 func ConstructGameBoard(state *GameState) string {
 	image := ChooseGameImage(state)
 	placeholder := ConstructPlaceholder(state)
-	return image + "\n" + placeholder + "\n"
+	return image + "\n" + "    " + placeholder + "\n"
 }
 
 func ChooseGameImage(state *GameState) string {
@@ -45,8 +45,8 @@ func ChooseGameImage(state *GameState) string {
 }
 
 func CheckNumWrong(state *GameState) {
-	wordChars := utils.Unique([]rune(state.randomWord))
-	correctGuesses := utils.Unique(utils.FilterContains(state.guessedLetters, wordChars))
+	wordChars := utils.Chars(state.randomWord).Unique()
+	correctGuesses := utils.Chars(state.guessedLetters).FilterContains(wordChars).Unique()
 	numWrong := len(state.guessedLetters) - len(correctGuesses)
 	state.numWrong = numWrong
 }
@@ -63,8 +63,8 @@ func CheckGameOver(state *GameState) {
 		fmt.Println("Game over. The word was:", state.randomWord)
 		state.gameOver = true
 	}
-	wordChars := utils.Unique([]rune(state.randomWord))
-	correctGuesses := utils.Unique(utils.FilterContains(state.guessedLetters, wordChars))
+	wordChars := utils.Chars(state.randomWord).Unique()
+	correctGuesses := utils.Chars(state.guessedLetters).FilterContains(wordChars).Unique()
 	if len(correctGuesses) >= len(wordChars) {
 		fmt.Println("You win! The word was:", state.randomWord)
 		state.gameOver = true
@@ -75,7 +75,7 @@ func ConstructPlaceholder(state *GameState) string {
 	length := len(state.randomWord)
 	arr := make([]string, length)
 	for i := range arr {
-		if utils.Contains(rune(state.randomWord[i]), state.guessedLetters) {
+		if utils.Chars(state.guessedLetters).Contains(rune(state.randomWord[i])) {
 			arr[i] = string(state.randomWord[i])
 		} else {
 			arr[i] = "_"
@@ -92,12 +92,14 @@ Loop:
 		fmt.Scan(&letter)
 		if len(letter) >= 1 {
 			break Loop
-		} else {
-			fmt.Println("Invalid input. Please enter a letter.")
 		}
 	}
 	letter = strings.ToLower(letter)
 	char, _ := utf8.DecodeRuneInString(letter)
+	if utils.Chars(state.guessedLetters).Contains(char) {
+		fmt.Println("Already guessed that letter!")
+		return
+	}
 	state.guessedLetters = append(state.guessedLetters, char)
 }
 

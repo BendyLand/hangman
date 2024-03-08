@@ -8,6 +8,38 @@ import (
 	"strings"
 )
 
+type Chars []rune
+
+func (chars Chars) Contains(item rune) bool {
+	for _, element := range chars {
+		if element == item {
+			return true
+		}
+	}
+	return false
+}
+
+func (chars Chars) Unique() Chars {
+	var resultArr Chars
+	for _, element := range chars {
+		if resultArr.Contains(element) {
+			continue
+		}
+		resultArr = append(resultArr, element)
+	}
+	return resultArr
+}
+
+func (guesses Chars) FilterContains(wordLetters []rune) Chars {
+	var correctGuesses []rune
+	for _, guess := range guesses {
+		if Chars(wordLetters).Contains(guess) && !Chars(correctGuesses).Contains(guess) {
+			correctGuesses = append(correctGuesses, guess)
+		}
+	}
+	return correctGuesses
+}
+
 func ChooseRandomWord() string {
 	file, err := os.Open("../words.txt")
 	if err != nil {
@@ -24,34 +56,4 @@ func ChooseRandomWord() string {
 	lines := strings.Split(result, "\n")
 	num := rand.Int() % len(lines)
 	return strings.ToLower(lines[num])
-}
-
-func Unique(arr []rune) []rune {
-	var newArr []rune
-	for _, item := range arr {
-		if Contains(item, newArr) {
-			continue
-		}
-		newArr = append(newArr, item)
-	}
-	return newArr
-}
-
-func FilterContains(guesses []rune, wordLetters []rune) []rune {
-	var correctGuesses []rune
-	for _, guess := range guesses {
-		if Contains(guess, wordLetters) && !Contains(guess, correctGuesses) {
-			correctGuesses = append(correctGuesses, guess)
-		}
-	}
-	return correctGuesses
-}
-
-func Contains(elem rune, list []rune) bool {
-	for _, item := range list {
-		if item == elem {
-			return true
-		}
-	}
-	return false
 }
