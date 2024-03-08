@@ -2,58 +2,68 @@ package main
 
 import (
 	"fmt"
+	"golang/pkgs/hangman"
 	"golang/pkgs/utils"
 	"strings"
 	"unicode/utf8"
 )
 
 type GameState struct {
-	numGuesses     int
+	numWrong       int
 	gameOver       bool
 	guessedLetters []rune
 	randomWord     string
 }
 
+func ChooseGameImage(state *GameState) string {
+	var image string
+	switch state.numWrong {
+	case 0:
+		image = hangman.EMPTY
+	case 1:
+		image = hangman.HEAD
+	case 2:
+		image = hangman.NECK
+	case 3:
+		image = hangman.ONE_ARM
+	case 4:
+		image = hangman.TWO_ARMS
+	case 5:
+		image = hangman.ONE_LEG
+	case 6:
+		image = hangman.FINISHED_MAN
+	default:
+		image = hangman.DEAD_MAN
+	}
+	return image
+}
+
+func CheckNumWrong(state *GameState) {
+	wordChars := utils.Unique([]rune(state.randomWord))
+	correctGuesses := utils.Unique(utils.FilterContains(state.guessedLetters, wordChars))
+	numWrong := len(state.guessedLetters) - len(correctGuesses)
+	state.numWrong = numWrong
+}
+
 func CheckGameOver(state *GameState) {
-	if state.numGuesses >= 7 {
+	CheckNumWrong(state)
+	if state.numWrong >= 7 {
 		fmt.Println("Game over. The word was:", state.randomWord)
 		state.gameOver = true
 	}
-	wordChars := make([]rune, len(state.randomWord))
-	for i, char := range state.randomWord {
-		wordChars[i] = char
-	}
-	correctGuesses := FilterContains(state.guessedLetters, wordChars)
-	if len(correctGuesses) == len(state.randomWord) {
+	wordChars := utils.Unique([]rune(state.randomWord))
+	correctGuesses := utils.Unique(utils.FilterContains(state.guessedLetters, wordChars))
+	if len(correctGuesses) >= len(wordChars) {
 		fmt.Println("You win! The word was:", state.randomWord)
 		state.gameOver = true
 	}
-}
-
-func FilterContains(guesses []rune, wordLetters []rune) []rune {
-	var correctGuesses []rune
-	for _, guess := range guesses {
-		if Contains(guess, wordLetters) {
-			correctGuesses = append(correctGuesses, guess)
-		}
-	}
-	return correctGuesses
-}
-
-func Contains(elem rune, list []rune) bool {
-	for _, item := range list {
-		if item == elem {
-			return true
-		}
-	}
-	return false
 }
 
 func ConstructPlaceholder(state *GameState) string {
 	length := len(state.randomWord)
 	arr := make([]string, length)
 	for i := range arr {
-		if Contains(rune(state.randomWord[i]), state.guessedLetters) {
+		if utils.Contains(rune(state.randomWord[i]), state.guessedLetters) {
 			arr[i] = string(state.randomWord[i])
 		} else {
 			arr[i] = "_"
@@ -74,6 +84,7 @@ Loop:
 			fmt.Println("Invalid input. Please enter a letter.")
 		}
 	}
+	letter = strings.ToLower(letter)
 	char, _ := utf8.DecodeRuneInString(letter)
 	state.guessedLetters = append(state.guessedLetters, char)
 }

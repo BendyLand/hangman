@@ -25,3 +25,33 @@ func ChooseRandomWord() string {
 	num := rand.Int() % len(lines)
 	return strings.ToLower(lines[num])
 }
+
+func Unique(arr []rune) []rune {
+	var newArr []rune
+	for _, item := range arr {
+		if Contains(item, newArr) {
+			continue
+		}
+		newArr = append(newArr, item)
+	}
+	return newArr
+}
+
+func FilterContains(guesses []rune, wordLetters []rune) []rune {
+	var correctGuesses []rune
+	for _, guess := range guesses {
+		if Contains(guess, wordLetters) && !Contains(guess, correctGuesses) {
+			correctGuesses = append(correctGuesses, guess)
+		}
+	}
+	return correctGuesses
+}
+
+func Contains(elem rune, list []rune) bool {
+	for _, item := range list {
+		if item == elem {
+			return true
+		}
+	}
+	return false
+}
