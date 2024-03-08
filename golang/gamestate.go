@@ -15,6 +15,12 @@ type GameState struct {
 	randomWord     string
 }
 
+func ConstructGameBoard(state *GameState) string {
+	image := ChooseGameImage(state)
+	placeholder := ConstructPlaceholder(state)
+	return image + "\n" + placeholder + "\n"
+}
+
 func ChooseGameImage(state *GameState) string {
 	var image string
 	switch state.numWrong {
@@ -45,9 +51,15 @@ func CheckNumWrong(state *GameState) {
 	state.numWrong = numWrong
 }
 
+func Display(state *GameState) {
+	gameboard := ConstructGameBoard(state)
+	fmt.Println(gameboard)
+}
+
 func CheckGameOver(state *GameState) {
 	CheckNumWrong(state)
 	if state.numWrong >= 7 {
+		Display(state)
 		fmt.Println("Game over. The word was:", state.randomWord)
 		state.gameOver = true
 	}

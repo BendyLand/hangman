@@ -9,9 +9,10 @@ func main() {
 	state := Init()
 	fmt.Println("Initial state:", state)
 	for !state.gameOver {
-		placeholder := ConstructPlaceholder(&state)
-		fmt.Println(placeholder)
+		gameboard := ConstructGameBoard(&state)
+		fmt.Println(gameboard)
 		GuessLetter(&state)
 		CheckGameOver(&state)
 	}
+
 }
