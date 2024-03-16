@@ -836,3 +836,141 @@ WARNING: Unmatched cancel notification for request id 229
 2024.03.04 12:02:41 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Hangman.scala[0m
 2024.03.04 12:02:42 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Hangman.scala[0m
 2024.03.04 12:02:42 INFO  skipping build import with status 'Installed'[0m
+Mar 04, 2024 12:35:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 283
+Mar 04, 2024 12:44:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 321
+Mar 04, 2024 12:44:40 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 329
+2024.03.04 12:45:02 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 12:45:02 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 12:45:02 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Hangman.scala[0m
+2024.03.04 12:45:02 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 12:45:04 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 12:45:22 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+Mar 04, 2024 12:45:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 352
+Mar 04, 2024 12:51:14 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 374
+Mar 04, 2024 12:59:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /Users/benlandrette/ccode/multi-language-practice/hangman/kotlin/app/src/main/kotlin/Gameboard.kt
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /Users/benlandrette/ccode/multi-language-practice/hangman/kotlin/app/src/main/kotlin/Gameboard.kt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /Users/benlandrette/ccode/multi-language-practice/hangman/kotlin/app/src/main/kotlin/Gameboard.kt
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:576)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:520)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1776)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:719)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Mar 04, 2024 1:01:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint fallbackResponseError
+SEVERE: Internal error: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /Users/benlandrette/ccode/multi-language-practice/hangman/kotlin/app/src/main/kotlin/Gameboard.kt
+java.util.concurrent.CompletionException: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /Users/benlandrette/ccode/multi-language-practice/hangman/kotlin/app/src/main/kotlin/Gameboard.kt
+	at java.base/java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:332)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptNow(CompletableFuture.java:747)
+	at java.base/java.util.concurrent.CompletableFuture.uniAcceptStage(CompletableFuture.java:735)
+	at java.base/java.util.concurrent.CompletableFuture.thenAcceptAsync(CompletableFuture.java:2218)
+	at scala.concurrent.java8.FuturesConvertersImpl$CF.thenAccept(FutureConvertersImpl.scala:37)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:279)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:190)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1623)
+Caused by: scala.meta.internal.metals.debug.BuildTargetNotFoundForPathException: No build target could be found for the path: /Users/benlandrette/ccode/multi-language-practice/hangman/kotlin/app/src/main/kotlin/Gameboard.kt
+	at scala.meta.internal.metals.debug.DebugProvider.debugDiscovery(DebugProvider.scala:576)
+	at scala.meta.internal.metals.debug.DebugProvider.runCommandDiscovery(DebugProvider.scala:520)
+	at scala.meta.internal.metals.MetalsLspService.discoverMainClasses(MetalsLspService.scala:1776)
+	at scala.meta.internal.metals.WorkspaceLspService.executeCommand(WorkspaceLspService.scala:719)
+	at scala.meta.metals.lsp.DelegatingScalaService.executeCommand(DelegatingScalaService.scala:169)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.request(GenericEndpoint.java:120)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleRequest(RemoteEndpoint.java:261)
+	... 9 more
+
+Mar 04, 2024 1:03:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 404
+Mar 04, 2024 1:03:06 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 411
+2024.03.04 13:08:33 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:08:33 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:09:07 WARN  Using indexes to guess the definition of chooseLetter[0m
+Mar 04, 2024 1:09:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 436
+2024.03.04 13:14:18 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:14:18 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:16:21 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:16:21 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:16:42 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:16:42 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:16:49 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:16:49 INFO  skipping build import with status 'Installed'[0m
+Mar 04, 2024 1:17:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 572
+Mar 04, 2024 1:17:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 575
+Mar 04, 2024 1:17:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 599
+2024.03.04 13:17:16 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:17:16 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:19:09 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:19:09 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:20:01 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:20:01 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+Mar 04, 2024 1:21:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 964
+Mar 04, 2024 1:21:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 965
+2024.03.04 13:21:52 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:21:52 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:22:00 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:22:00 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:22:07 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:22:07 INFO  skipping build import with status 'Installed'[0m
+Mar 04, 2024 1:22:48 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1189
+2024.03.04 13:22:48 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:22:48 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:22:58 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:22:58 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:26:07 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:26:07 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:26:09 WARN  no build target for: /Users/benlandrette/ccode/multi-language-practice/hangman/scala/Gameboard.scala[0m
+2024.03.04 13:26:09 INFO  skipping build import with status 'Installed'[0m
+2024.03.04 13:42:29 WARN  Using indexes to guess the definition of chooseLetter[0m
+Mar 04, 2024 1:42:30 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1282
+Mar 04, 2024 1:42:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1294
+Mar 04, 2024 9:08:42 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2024.03.04 21:08:44 INFO  Shutting down server[0m
+2024.03.04 21:08:44 INFO  shutting down Metals[0m
+2024.03.04 21:08:44 INFO  Shut down connection with build server.[0m
+2024.03.04 21:08:44 INFO  Exiting server[0m
